@@ -1,11 +1,11 @@
-#include <stdion.h>
+#include <stdio.h>
 /**
- * main - use while loop function
+ * main - uses while loop function
  *
- * Description: printing alphabet in revers using while loop
+ * Description: printing alhabet in reverse using while loop
  * Return: 0
  */
-int main(void)
+int main (void)
 {
 	char ch = 'z';
 
