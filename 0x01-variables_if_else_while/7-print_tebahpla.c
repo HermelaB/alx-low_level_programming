@@ -5,7 +5,7 @@
  * Description: printing alhabet in reverse using while loop
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	char ch = 'z';
 

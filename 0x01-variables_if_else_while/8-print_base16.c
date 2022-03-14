@@ -5,7 +5,7 @@
  * Description: hexadecimal valus in lowercase using putchar
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	char c = '0';
 
