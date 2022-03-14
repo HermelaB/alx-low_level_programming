@@ -3,7 +3,7 @@
  *
  * main - uses while loop
  *
- * Description: printig alhabet in lc and uc followed by new line using while loop
+ * Description: printig alhabet lc and uc followed by new line using while loop
  * Return: 0
  */
 int main(void)
