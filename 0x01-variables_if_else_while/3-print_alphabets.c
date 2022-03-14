@@ -3,11 +3,10 @@
  *
  * main - uses while loop
  *
- * Description: printig alhabet in lower case and upper case followed by new line using while loop
- * 
+ * Description: printig alhabet in lower case and
+ * upper case followed by new line using while loop
  * Return: 0
  */
-
 int main(void)
 {
 	char ch1 = 'a';
