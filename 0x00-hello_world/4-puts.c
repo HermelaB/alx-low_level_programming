@@ -1,8 +1,9 @@
-Â#include <stdio.h>
+#include<stdio.h>
 /**
-* Main
+* main function
 *
-* Return: always o(success)
+*
+* Rreturn 0
 *
 */
 int main(void)
