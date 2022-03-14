@@ -1,13 +1,13 @@
 #include<stdio.h>
 /**
-* main function
+* main - print string from function
 *
-*
-* Rreturn 0
-*
+* Description: using main function 
+* Rreturn: 0
 */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+
+return(0);
 }
