@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - function holds all the single digits 
+ * main - function holds all the single digits
  * 
  * Descriptio: print all the numbers single digits
  * Return: 0
