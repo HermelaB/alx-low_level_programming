@@ -7,7 +7,7 @@
 * Description : prints wheather last digit number >5, >6 or zero
 * Return: 0
 */
-int main(void)
+        int main(void)
 {	
 	int n;
 	
