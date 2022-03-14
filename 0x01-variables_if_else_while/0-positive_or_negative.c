@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* Main-print wheather number
+* main - print wheather number is positive negative or zero
 *
-* Description: print wheather
-* Return:0
+* Description: print wheather number is positive negative or zero
+* Return: 0
 */
 int main(void)
 {
@@ -20,5 +20,5 @@ int main(void)
 		printf("%i is zero\n", n);
 	else
 		printf("%i is negative\n", n);
-	return(0);
+	return (0);
 }
