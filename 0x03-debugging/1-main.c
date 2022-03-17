@@ -8,17 +8,17 @@ int main(void)
 	/*
 	 * int i;
 	 */
-	printf("Infinite loop incomming :(\n"));
+	printf("Infinite loop incomming :(\n");
 	/*
 	 * i = 0;
 	 */
 	/*
 	 * while (i < 10)
 	 * {
-	 * putchar(i)'
+	 * putchar(i);
 	 * }
 	 */
-	printf("Ifinite loop avoided! \\o/\n");
+	printf("Ifinite loop avoided! \\o/\n"i);
 
 	return (0);
 }
