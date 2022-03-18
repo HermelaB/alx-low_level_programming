@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_squre - print square
+ * print_square - print square
  *
  * @size: integer to set square size
  */
@@ -11,7 +11,7 @@ void print_square(int size)
 
 	if (size <= 0)
 	{
-		_putchar ('\n');
+		_putchar('\n');
 	}else
 	{
 		for (i = 0; i < size; i++)
