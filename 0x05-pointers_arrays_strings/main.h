@@ -7,5 +7,8 @@ int _putchar(char c);
 int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
+void print_array(int *a, int n);
+char *_strcopy(char *dest, char *src);
+int _atol(char *s);
 
 #endif
