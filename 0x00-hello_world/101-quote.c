@@ -1,15 +1,13 @@
 #include <unistd.h>
 /**
-* main - main function prints quote
-*
-* description: print with out printf and puts
-*
-* return:1
-*
-*/
+ * main - main function prints quote
+ *
+ * Description: with out printf and puts prints quote
+ * Return: Always 1 (success)
+ */
 int main(void)
 {
 
-	write(1,"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",59);
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
