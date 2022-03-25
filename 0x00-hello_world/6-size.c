@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-* Main
-*
-* Return 0
-*/
+ * main - Entry poin
+ * 
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	char c;
