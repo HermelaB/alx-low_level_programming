@@ -1,23 +1,31 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
+/* betty style doc for function main goes there */
 /**
- * main - function holds all the single digits
- * 
- * Descriptio: print all the numbers single digits
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c = 48;
+	int i;
 
-	while (c <= 57)
+	i = 48;
+	while  (i < 58)
 	{
-		putchar(c);
-		if (c != 57)
+		putchar(i);
+		if (i !=  57)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
+			i++;
 		}
-		c++;
+		else
+		{
+			i++;
+		}
 	}
 	putchar('\n');
 
