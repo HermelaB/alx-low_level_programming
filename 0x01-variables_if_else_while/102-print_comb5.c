@@ -1,58 +1,44 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - the only function
+*
+*Description: printing all two digit combinations
+*
+*Return: 0
+*/
+
 int main(void)
 {
 	int i, j, k, l;
 
-	i = j = k = 48;
-	l = 49;
-
-	while  ((i < 58))
+	for (i = 48; i < 58; i++)
 	{
-		putchar(i);
-		putchar(j);
-		putchar(32);
-		putchar(k);
-		putchar(l);
-		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+		for (j = 48; j < 58 ; j++)
 		{
-			putchar('\n'); i++;
-		}
-		else
-		{
-			putchar(44); putchar(32);
-			if ((k == 57) && (l == 57))
+			for (k = 48; k < 58 ; k++)
 			{
-				if (j < 56)
+				for (l = 48; l < 58; l++)
 				{
-					l = ++j + 1; k = i;
+					if (k > i || (k == i && l > j))
+					{
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(l);
+					if (i != 57 || j != 56 || k != 57 || l != 57)
+						{
+						putchar(',');
+						putchar(' ');
+						}
+					}
 				}
-				else if (j == 56)
-				{
-					j++; k = i + 1; l = 48;
-				}
-				else if (j == 57)
-				{
-					j = 48; l = 49; k = ++i;
-				}
-			}
-			else if (l < 57)
-			{
-				l++;
-			}
-			else
-			{
-				l = 48; k++;
 			}
 		}
+
+
 	}
+	putchar('\n');
+
 	return (0);
 }
