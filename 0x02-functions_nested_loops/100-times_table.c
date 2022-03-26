@@ -1,51 +1,48 @@
 #include "main.h"
-
 /**
- * print_times_table - prints the times table up to the integer input
- * @n: integer input
- *
- * Return: void
+ * print_times_table - prints the times table
+ * @n: takes in an integer
  */
-
 void print_times_table(int n)
 {
-	int a, b, c, d, e, f;
+	int i, j, k;
 
-	if (n >= 0 && n < 15)
+	if (n > 15 || n < 0)
+		return;
+	for (i = 0; i <= n; i++)
 	{
-		for (a = 0; a <=  n; a++)
+		for (j = 0; j <= n; j++)
 		{
-			for (b = 0; b <= n; b++)
+			k = i * j;
+			if (j == 0)
 			{
-				c = a * b; d = c / 100; e = (c /  10) % 10;
-				f = (c % 100) % 10;
-				if (b == 0)
-				{
-					_putchar('0');
-				}
-				else if (c < 10)
-				{
-					_putchar(' '); _putchar(' ');
-					_putchar('0' + f);
-				}
-				else if (c < 100)
-				{
-					_putchar(' ');
-					_putchar('0' + e); _putchar('0' + f);
-				}
-				else
-				{
-					_putchar('0' + d);
-					_putchar('0' + e);
-					_putchar('0' + f);
-				}
-				if (b < n)
-				{
-					_putchar(','); _putchar(' ');
-				}
-				else
-					_putchar('\n');
+				_putchar(k + '0');
+			}
+			else if (k <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			}
+			else if (k >= 10 && k < 100)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k / 10 + '0');
+				_putchar(k % 10 + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 100) + '0');
+				_putchar(k / 10 % 10 + '0');
+				_putchar(k % 10 + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
