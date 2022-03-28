@@ -1,31 +1,25 @@
 #include "main.h"
+
 /**
-* _strspn - returns the number of bytes in the initial segment
-*
-* @s: for the count of characters
-* @accept: string pointer to cmpr
-* Return: number of bytes
-*/
+ * _strspn - gets lengthof a prefix substring
+ * @s: string to check
+ * @accept: string to check against
+ *
+ * Return: number of bytes of s in accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int num = 0;
-	int i, j, k;
+	unsigned int i, j;
 
-	i = 0;
-	k = 0;
-
-	while (s[i] != '\0')
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
-				k = 1;
+				break;
 		}
-		if (k == 0)
-		break;
-
-		num++;
-		i++;
+		if (!accept[j])
+			break;
 	}
-	return (num);
+	return (i);
 }
